@@ -139,7 +139,7 @@ void insertAtPosi(Node* &head, Node* &tail, int idx, int data){
 }
 
 // Function to delete a node from the head of the linked list
-void deleteFromHead(Node* &head){
+void deleteFromHead(Node* &head, Node* &tail){
 
     // handling the case of an empty LL
     if(head == NULL){
@@ -197,7 +197,7 @@ void deleteFromPosi(Node* &head, Node* &tail, int idx){
 
     // handling first position
     else if(idx == 0){
-        deleteFromHead(head);
+        deleteFromHead(head, tail);
         return;
     }
 
@@ -240,7 +240,7 @@ int main(){
     printLL(head);
     cout << lengthOfLL(head);
 
-    // deleteFromHead(head);
+    // deleteFromHead(head, tail);
     // printLL(head);
     // cout << lengthOfLL(head);
 
