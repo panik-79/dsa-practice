@@ -194,8 +194,11 @@ int main(){
     second -> next = third;
     third -> next = NULL;
 
-    insertAtTail(head, tail, 40);
-    insertAtTail(head, tail, 50);
+    // insertAtTail(head, tail, 40);
+    // insertAtTail(head, tail, 50);
+
+    deleteFromTail(head, tail);
+    deleteFromTail(head, tail);
 
     printLL(head);
     cout << endl;
@@ -210,11 +213,19 @@ int main(){
     // printLL(head);
     // cout << endl;
     // cout << "Length of the linked list is: " << lengthOfLL(head) << endl;
-    
-    deleteFromPos(head, tail, -5);
+
+    // check head data
+    cout << "Head data: " << head -> data << endl;
+    cout << "Tail data: " << tail -> data << endl;
+
+    deleteFromPos(head, tail, 0);
     printLL(head);
     cout << endl;
     cout << "Length of the linked list is: " << lengthOfLL(head) << endl;
+
+    // check head data after deletion of single node
+    cout << "Head data: " << head -> data << endl;
+    cout << "Tail data: " << tail -> data << endl;
 
 
     return 0;
