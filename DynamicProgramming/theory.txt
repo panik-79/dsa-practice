@@ -1,0 +1,23 @@
+Dynamic Programming Theory:
+
+Dynamic programming is a technique used to solve complex problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once. It is based on the principle of optimal substructure, which states that an optimal solution to a problem can be constructed from optimal solutions to its subproblems.
+
+The key idea behind dynamic programming is to store the solutions to subproblems in a table or array, so that they can be reused when needed. This avoids redundant computations and improves the overall efficiency of the algorithm.
+
+Example 1: Fibonacci Sequence
+The Fibonacci sequence is a classic example of dynamic programming. It can be defined as follows:
+- Base case: fib(0) = 0, fib(1) = 1
+- Recursive case: fib(n) = fib(n-1) + fib(n-2) for n > 1
+
+To compute the nth Fibonacci number using dynamic programming, we can store the previously computed Fibonacci numbers in an array and reuse them to compute the current number.
+
+Example 2: Knapsack Problem
+The knapsack problem is another example where dynamic programming can be applied. Given a set of items with weights and values, the goal is to find the most valuable combination of items that can be packed into a knapsack of limited capacity.
+
+By using dynamic programming, we can build a table that represents the maximum value that can be obtained for different capacities of the knapsack. This table is filled iteratively, considering each item and its weight and value.
+
+These are just a few examples of how dynamic programming can be used to solve problems efficiently. The key is to identify the subproblems and the optimal substructure, and then use memoization or tabulation to store and reuse the solutions.
+
+
+
+DP says that once I solve a problem, I won't solve it again as I have already stored it somewhere.
